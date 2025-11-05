@@ -2,6 +2,161 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #0b0e13;
+    background-color: transparent;
     color: #fff !important;
+}
+.bg-dark-theme{
+
+    background-color: #0b0e13;
+}
+.text-warning{
+    color: #cbfe1c !important;
+}
+.btn-warning{
+    color: #000 !important;
+    background-color: #cbfe1c !important;
+}
+.custom-hover {
+  transition: color 0.3s ease;
+  
+}
+
+.custom-hover:hover {
+  color: #cbfe1c !important;
+}
+.navbar-toggler {
+    --bs-navbar-toggler-border-color: transparent; 
+    --bs-navbar-toggler-focus-width:none;
+    --bs-navbar-hover-color:red;
+}
+.hero-section{
+    background-image: url(./../images/hero-bg.jpg);
+    height: 100vh;
+    background-size: contain;
+}
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+  /* border: none; */
+}
+
+.btn-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.0) 0%,
+    rgba(255,255,255,0.6) 50%,
+    rgba(255,255,255,0.0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: all 0.5s;
+}
+
+.btn-shine:hover::before {
+  left: 125%; 
+  transition: all 0.5s;
+}
+.btn-second{
+  background-color: transparent;
+  color: #cbfe1c !important;
+  border-color: #cbfe1c !important; 
+}
+.btn-second:hover{
+  background-color: #cbfe1c;
+  color: #000 !important;
+}
+
+.img_hero{
+  background: linear-gradient(to right, #cbfe1c, #00aaff);
+  padding: 3px; 
+  border-radius: 12px;
+  position: relative;
+  height: 300px;
+}
+.img_hero img{
+  border-radius: 10px;
+  background-color: #0b0e13;
+  color: #fff;
+  border: none;
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+}
+.padge{
+    bottom: -20px;
+  left: -20px;
+}
+
+.heading-warning span{
+  margin: 0 10px;
+  background-color: #cbfe1c;
+  height: 2px;
+   width: 50px;
+   background: linear-gradient(to left, #cbfe1c, transparent); 
+  border-radius: 5px;
+}
+.last-span{
+   background: linear-gradient(to right, #cbfe1c, transparent) !important; 
+}
+.carousel-inner img{
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+
+.carousel-inner img:hover .overlay {
+  opacity: 1;       
+}
+.game-things{
+  top: -40px;
+  font-size: 10px !important;
+  transition:  top 0.3s ease;
+}
+
+.c-image:hover .game-things {
+  top: 10px;
+  transition: top 0.3s ease;
+}
+.overlay {
+  background-color: rgba(203, 254, 28, 0); 
+  opacity: 0;
+  transition: opacity 0.5s ease, background-color 0.5s ease;
+}
+.c-image{
+  border-radius: 20px;
+}
+
+.c-image:hover{
+  border: 2px solid #cbfe1c;
+}
+.c-image:hover .overlay {
+  opacity: 1;
+  border-radius: 20px;
+  background-color: rgba(203, 254, 28, 0.3);
+}
+.gameName{
+  bottom: -40px;
+  left: 20px !important;
+  transition:  bottom 0.3s ease;;
+}
+.c-image:hover .gameName {
+  bottom:  10px;
+  padding: 3px;
+  border-radius: 5px;
+  color: #000 !important;
+  left: 20px !important;
+  transition: bottom 0.3s ease;
+}
+.blur-background {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(0,0,0,0.3); 
 }

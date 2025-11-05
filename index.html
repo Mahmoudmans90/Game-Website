@@ -1,54 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Website</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Website</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
+<body class="bg-dark-theme">
+  <nav class="navbar navbar-expand-lg bg-dark-theme border-bottom border-secondery">
+    <div class="container w-100">
+      <a class="navbar-brand text-warning" href="#"><i class="fa-solid fa-gamepad mx-3 text-warning"></i> GameArena</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item text-warning">
+            <a class="nav-link custom-hover active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-hover" href="#">OUR GAMES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-hover" href="#">what we do</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link custom-hover">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-hover">Contact Us</a>
+          </li>
+        </ul>
+        <hr class="d-lg-none text-white my-2 opacity-50" />
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link d-flex align-items-center" href="#">
+              <i class="fa-regular fa-bell custom-hover"></i>
+              <p class="d-lg-none mb-0 mx-2 custom-hover">Notification</p>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link d-flex align-items-center" href="#">
+              <i class="fa-regular fa-message custom-hover"></i>
+              <p class="d-lg-none mb-0 mx-2 custom-hover">Messages</p>
+            </a>
+          </li>
+          <li class="">
+            <button class="btn btn-warning w-100 btn-shine">Sign In</button>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+  <section class="hero-section position-relative h-100 py-5 text-white">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark-theme opacity-75"></div>
+    <div class="position-relative container h-100 d-flex align-items-center z-1">
+      <div class="row align-items-center h-75">
+        <div class="col-lg-6 text-md-center text-sm-center text-lg-start col-md-12">
+          <div class="inner">
+            <h1 class="fw-bolder">
+              THE ULTIMATE
+              <span class="text-warning d-block">GAMING</span> EXPERIENCE
+            </h1>
+            <p>
+              Join millions of gamers worldwide in the most competitive
+              eSports tournaments. Experience next-level gaming with
+              cutting-edge technology and endless possibilities.
+            </p>
+            <div class="d-flex justify-content-lg-start justify-content-md-center justify-content-sm-center">
+              <button class="btn btn-warning p-3 ml-3 btn-shine">
+                Start Gaming Now
+              </button>
+              <button class="btn btn-info btn-second border btn-shine rounded-2 p-3 mx-3">
+                Watch Totorial
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-md-center text-sm-center text-lg-start col-md-12 mt-md-5 mt-sm-5">
+          <div class="img_hero">
+            <img class="h-100" src="./images/hero-img.png" class="" alt="" />
+            <div class="padge d-flex position-absolute bg-dark-theme border rounded-2 align-items-center p-2">
+              <div class="">
+                <i class="text-warning fa-solid fa-trophy fs-3 mx-2"></i>
+              </div>
+              <div class="">
+                <p class="m-0 text-secondary">Active Players</p>
+                <h4 class="m-0">2.5M+</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-5">
+    <div class="header-section text-center my-5">
+      <div class="d-flex justify-content-center align-items-center heading-warning">
+        <span></span>
+        <h4 class="text-warning">OUR GAMES</h4>
+        <span class="last-span"></span>
+      </div>
+      <h2 class="fw-bolder fs-1">Our Latest Games</h2>
+    </div>
 
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active d-none"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" class="d-none" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" class="d-none" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
 
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
 
+            <div class="row d-lg-flex d-md-none d-sm-none">
+              <div class="col-md-4">
+                <div class="position-relative c-image">
+                  <div class="d-flex position-absolute game-things ">
+                    <div class="d-flex justify-content-center align-items-center rounded-2 p-1 mx-3 blur-background"><i
+                        class="fa-solid fa-flag text-warning"></i>
+                      <p class="m-0 mx-2">PRICING</p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center rounded-2 p-1 mx-3 blur-background"><i
+                        class="fa-solid fa-flag text-warning"></i>
+                      <p class="m-0 mx-2">PRICING</p>
+                    </div>
+                  </div>
+                  <div
+                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  </div>
+                  <img src="./images/latest-games-1.png" class="w-100 " alt="">
+                  <div class="position-absolute gameName text-dark fs-5 w-100">
+                    gameName
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="position-relative c-image">
+                  <div class="d-flex position-absolute game-things ">
+                    <div class="d-flex justify-content-center align-items-center rounded-2 p-1 mx-3 blur-background"><i
+                        class="fa-solid fa-flag text-warning"></i>
+                      <p class="m-0 mx-2">PRICING</p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center rounded-2 p-1 mx-3 blur-background"><i
+                        class="fa-solid fa-flag text-warning"></i>
+                      <p class="m-0 mx-2">PRICING</p>
+                    </div>
+                  </div>
+                  <div
+                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  </div>
+                  <img src="./images/latest-games-3.png" class="w-100" alt="">
 
+                  <div class="position-absolute gameName text-dark fs-5 w-100">
+                    gameName
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="position-relative c-image">
+                  <div class="d-flex position-absolute game-things ">
+                    <div class="d-flex justify-content-center align-items-center rounded-2 p-1 mx-3 blur-background"><i
+                        class="fa-solid fa-flag text-warning"></i>
+                      <p class="m-0 mx-2">PRICING</p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center rounded-2 p-1 mx-3 blur-background"><i
+                        class="fa-solid fa-flag text-warning"></i>
+                      <p class="m-0 mx-2">PRICING</p>
+                    </div>
+                  </div>
+                  <div
+                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  </div>
+                  <img src="./images/latest-games-2.png" class="w-100" alt="">
+                  <div class="position-absolute gameName text-dark fs-5 w-100">
+                    gameName
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-lg-none d-md-flex d-sm-flex">
+             <div class="col-md-6">
+                <div class="position-relative c-image">
+                  <div class="d-flex position-absolute game-things ">
+                    <div class="d-flex justify-content-center align-items-center rounded-2 p-1 mx-3 blur-background"><i
+                        class="fa-solid fa-flag text-warning"></i>
+                      <p class="m-0 mx-2">PRICING</p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center rounded-2 p-1 mx-3 blur-background"><i
+                        class="fa-solid fa-flag text-warning"></i>
+                      <p class="m-0 mx-2">PRICING</p>
+                    </div>
+                  </div>
+                  <div
+                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  </div>
+                  <img src="./images/latest-games-1.png" class="w-100 " alt="">
+                  <div class="position-absolute gameName text-dark fs-5 w-100">
+                    gameName
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="position-relative c-image">
+                  <div class="d-flex position-absolute game-things ">
+                    <div class="d-flex justify-content-center align-items-center rounded-2 p-1 mx-3 blur-background"><i
+                        class="fa-solid fa-flag text-warning"></i>
+                      <p class="m-0 mx-2">PRICING</p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center rounded-2 p-1 mx-3 blur-background"><i
+                        class="fa-solid fa-flag text-warning"></i>
+                      <p class="m-0 mx-2">PRICING</p>
+                    </div>
+                  </div>
+                  <div
+                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  </div>
+                  <img src="./images/latest-games-3.png" class="w-100" alt="">
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
+                  <div class="position-absolute gameName text-dark fs-5 w-100">
+                    gameName
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+
+            <div class="row d-lg-flex d-md-none d-sm-none">
+              <div class="col-md-4"><img src="./images/latest-games-4.png" class="w-100 object-fit-cover" alt=""></div>
+              <div class="col-md-4"><img src="./images/latest-games-5.png" class="w-100 object-fit-cover" alt=""></div>
+              <div class="col-md-4"><img src="./images/latest-games-6.png" class="w-100 object-fit-cover" alt=""></div>
+            </div>
+            <div class="row d-lg-none d-md-flex d-sm-flex">
+              <div class="col-md-6"><img src="./images/latest-games-3.png" class="w-100 object-fit-cover" alt=""></div>
+              <div class="col-md-6"><img src="./images/latest-games-4.png" class="w-100 object-fit-cover" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row d-lg-none d-md-flex d-sm-flex">
+              <div class="col-md-6"><img src="./images/latest-games-5.png" class="w-100 object-fit-cover" alt=""></div>
+              <div class="col-md-6"><img src="./images/latest-games-6.png" class="w-100 object-fit-cover" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next  " type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="d-flex justify-content-center my-5">
+        <div><button class="btn btn-second">View All Games</button></div>
+      </div>
+  </section>
+
+  <script src="https://kit.fontawesome.com/bd5ba01fe8.js" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
