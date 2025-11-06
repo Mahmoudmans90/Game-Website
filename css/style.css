@@ -1,38 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: transparent;
-    color: #fff !important;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #fff !important;
 }
-.bg-dark-theme{
-
-    background-color: #0b0e13;
+.bg-dark-theme {
+  background-color: #0b0e13;
 }
-.text-warning{
-    color: #cbfe1c !important;
+.text-warning {
+  color: #cbfe1c !important;
 }
-.btn-warning{
-    color: #000 !important;
-    background-color: #cbfe1c !important;
+.btn-warning {
+  color: #000 !important;
+  background-color: #cbfe1c !important;
 }
 .custom-hover {
   transition: color 0.3s ease;
-  
 }
 
 .custom-hover:hover {
   color: #cbfe1c !important;
 }
 .navbar-toggler {
-    --bs-navbar-toggler-border-color: transparent; 
-    --bs-navbar-toggler-focus-width:none;
-    --bs-navbar-hover-color:red;
+  --bs-navbar-toggler-border-color: transparent;
+  --bs-navbar-toggler-focus-width: none;
+  --bs-navbar-hover-color: red;
 }
-.hero-section{
-    background-image: url(./../images/hero-bg.jpg);
-    height: 100vh;
-    background-size: contain;
+.hero-section {
+  background-image: url(./../images/hero-bg.jpg);
+  height: 100vh;
+  background-size: contain;
 }
 .btn-shine {
   position: relative;
@@ -41,7 +39,7 @@
 }
 
 .btn-shine::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -75%;
@@ -49,76 +47,74 @@
   height: 100%;
   background: linear-gradient(
     120deg,
-    rgba(255,255,255,0.0) 0%,
-    rgba(255,255,255,0.6) 50%,
-    rgba(255,255,255,0.0) 100%
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
   transition: all 0.5s;
 }
 
 .btn-shine:hover::before {
-  left: 125%; 
+  left: 125%;
   transition: all 0.5s;
 }
-.btn-second{
+.btn-second {
   background-color: transparent;
   color: #cbfe1c !important;
-  border-color: #cbfe1c !important; 
+  border-color: #cbfe1c !important;
 }
-.btn-second:hover{
+.btn-second:hover {
   background-color: #cbfe1c;
   color: #000 !important;
 }
 
-.img_hero{
+.img_hero {
   background: linear-gradient(to right, #cbfe1c, #00aaff);
-  padding: 3px; 
+  padding: 3px;
   border-radius: 12px;
   position: relative;
   height: 300px;
 }
-.img_hero img{
+.img_hero img {
   border-radius: 10px;
   background-color: #0b0e13;
   color: #fff;
   border: none;
-  width:  100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.padge{
-    bottom: -20px;
+.padge {
+  bottom: -20px;
   left: -20px;
 }
 
-.heading-warning span{
+.heading-warning span {
   margin: 0 10px;
   background-color: #cbfe1c;
   height: 2px;
-   width: 50px;
-   background: linear-gradient(to left, #cbfe1c, transparent); 
+  width: 50px;
+  background: linear-gradient(to left, #cbfe1c, transparent);
   border-radius: 5px;
 }
-.last-span{
-   background: linear-gradient(to right, #cbfe1c, transparent) !important; 
+.last-span {
+  background: linear-gradient(to right, #cbfe1c, transparent) !important;
 }
-.carousel-inner img{
+.carousel-inner img {
   height: 200px;
   width: 100%;
   border-radius: 20px;
   object-fit: cover;
 }
 
-
-
 .carousel-inner img:hover .overlay {
-  opacity: 1;       
+  opacity: 1;
 }
-.game-things{
+.game-things {
   top: -40px;
   font-size: 10px !important;
-  transition:  top 0.3s ease;
+  transition: top 0.3s ease;
 }
 
 .c-image:hover .game-things {
@@ -126,15 +122,15 @@
   transition: top 0.3s ease;
 }
 .overlay {
-  background-color: rgba(203, 254, 28, 0); 
+  background-color: rgba(203, 254, 28, 0);
   opacity: 0;
   transition: opacity 0.5s ease, background-color 0.5s ease;
 }
-.c-image{
+.c-image {
   border-radius: 20px;
 }
 
-.c-image:hover{
+.c-image:hover {
   border: 2px solid #cbfe1c;
 }
 .c-image:hover .overlay {
@@ -142,13 +138,13 @@
   border-radius: 20px;
   background-color: rgba(203, 254, 28, 0.3);
 }
-.gameName{
+.gameName {
   bottom: -40px;
   left: 20px !important;
-  transition:  bottom 0.3s ease;;
+  transition: bottom 0.3s ease;
 }
 .c-image:hover .gameName {
-  bottom:  10px;
+  bottom: 10px;
   padding: 3px;
   border-radius: 5px;
   color: #000 !important;
@@ -158,5 +154,108 @@
 .blur-background {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  background-color: rgba(0,0,0,0.3); 
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.mobile_games {
+  background-color: #1a1a1a;
+  height: 200px;
+  width: auto;
+  transition: border-color 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+.mobile_games::before,
+.mobile_games::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  transition: all 0.5s ease;
+}
+.mobile_games::before {
+  top: -40px;
+  left: -40px;
+  rotate: 135deg;
+  border-top-color: #cbfe1c;
+}
+.mobile_games::after {
+  bottom: -40px;
+  right: -40px;
+  rotate: 135deg;
+  border-bottom-color: #cbfe1c;
+}
+.mobile_games:hover::before {
+  top: 0;
+  left: 0;
+}
+.mobile_games:hover::after {
+  bottom: 0;
+  right: 0;
+}
+hr {
+  border: none;
+  width: 35%;
+  height: 3px;
+  opacity: 75%;
+  box-shadow: 0 0 15px #cbfe1c;
+  background: linear-gradient(to left, #cbfe1c, #1e2939);
+}
+.hr-1 {
+  background: linear-gradient(to right, #cbfe1c, #1e2939);
+}
+.bg-1e2939 {
+  background-color: #1e2939;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.mobile_games:hover {
+  border-color: #cbfe1c !important;
+}
+.mobile_games:hover .bg-1e2939 {
+  background-color: #cbfe1c;
+}
+
+.mobile_games:hover .bg-1e2939 i {
+  color: #1e2939 !important;
+}
+.layer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  background: radial-gradient(circle, #cbfe1c 0%, transparent 70%);
+  box-shadow: 0 0 30px 10px rgba(203, 254, 28, 0.4);
+  opacity: 70%;
+}
+.containerSlider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+.slide-track {
+  display: inline-flex;
+  animation: scroll 40s linear infinite;
+}
+.second{
+  animation: scroll2 40s linear infinite !important;
+}
+.slide-track img {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes scroll2 {
+  from { transform: translateX(0); }
+  to { transform: translateX(15%); }
 }
