@@ -17,11 +17,18 @@ A simple responsive gaming-themed website built using **Bootstrap 5**, showcasin
 - **HTML5**  
 - **CSS3 / Bootstrap 5**  
 
----
-
-## 📂 Project Structure
 
 ---
+
+## 💡 Notes
+This project was created as a **Front-End assignment** to practice layout, responsive design, and styling techniques using Bootstrap.
+
+---
+
+## 🔗 Links
+- 📁 **Repository:** [Game Website on GitHub](https://github.com/Mahmoudmans90/Game-Website)  
+- 🌐 **Live Preview:** [Game Website Front-End](https://mahmoudmans90.github.io/Game-Website/)
+
 
 ## 💡 Notes
 This project was created as a **Front-End assignment** to practice layout, responsive design, and styling techniques using Bootstrap.
