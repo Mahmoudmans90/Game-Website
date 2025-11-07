@@ -16,7 +16,6 @@ A simple responsive gaming-themed website built using **Bootstrap 5**, showcasin
 ## 🧩 Technologies Used
 - **HTML5**  
 - **CSS3 / Bootstrap 5**  
-- **JavaScript (Basic Interactivity)**  
 
 ---
 
