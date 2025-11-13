@@ -358,3 +358,20 @@
 .links a:hover{
   color: #cbfe1c !important;
 }
+#home{
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .img_hero {
+    margin-bottom: 50px;
+  }
+  #home{
+    height: auto !important;
+  }
+  .text-small{
+    font-size: 12px;
+    --bs-body-line-height: 1;
+    line-height: var(--bs-body-line-height);
+  }
+}
